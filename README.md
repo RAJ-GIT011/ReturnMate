@@ -1,88 +1,88 @@
-# 🔄 ReturnMate – Smart Return & Refund System
+🛒 BaskNOW — Smart Delivery with Kirana Fallback
+BaskNOW is a smart delivery simulation app that mimics how real-world platforms like Zepto or Instamart handle inventory shortages. When items are missing from a central dark store, the system intelligently falls back to nearby kirana stores to fulfill the order — ensuring smooth delivery without customer disruption.
 
-ReturnMate is an intelligent return and refund automation platform built for e-commerce businesses. It aims to reduce refund delays, flag return fraud, and optimize inventory classification using trust-based decision-making and product grading.
+🚀 Features
+✅ Dark store inventory fulfillment
+✅ Smart fallback to local kirana stores
+✅ Animated map-based rider delivery simulation
+✅ ETA calculation using geolocation logic
+✅ Clean, modern UI with smooth transitions
+✅ Fully modular and componentized using React
+✅ No backend needed (mock data used for kiranas and inventory)
 
----
+🧠 Project Use-Case
+This project is ideal for:
 
-## 🚀 Features
+Simulating last-mile fallback delivery strategies
 
-### 🧍 Customer Side
-- 📦 Submit a return request via a simple form
-- 📸 Upload product and invoice images
-- ⚡ Instant refunds for trusted users
-- 📊 Track return and refund status
+Demonstrating real-world delivery edge cases (like stockouts)
 
-### 🏭 Admin Side
-- 🧠 Auto-score return credibility using Trust Score Engine
-- 📝 Grade returned products (Grade A/B/C)
-- ♻️ Classify inventory as Resell, Refurbish, or Scrap
+Practicing fallback-based routing logic and mapping systems
 
----
+Portfolio / Resume project showing full product thinking
 
-## 💡 Problem Solved
+🗺️ Flow Overview
+User Order → Items requested by customer
 
-> Traditional return systems are:
-- Slow (3–5 day refund time)
-- Prone to abuse (frequent fake returns)
-- Wasteful (usable products often discarded)
-- Manual and error-prone
+Dark Store Check → Fulfilled if in stock
 
-**ReturnMate** solves this with:
-- Trust Score–based instant decisions
-- Automated grading panel
-- Smart inventory reclassification
+Fallback Matching → Missing items mapped to local kiranas
 
----
+Route Simulation → Rider animated across stores + to customer
 
-## 🧱 Tech Stack
+Final Order Summary → Merged total cost and item summary
 
-| Layer        | Technology           |
-|-------------|----------------------|
-| Frontend     | React.js, Axios, CSS |
-| Backend      | Node.js, Express     |
-| Database     | MongoDB Atlas        |
-| File Upload  | Cloudinary or Firebase (Optional) |
-| Hosting      | Render / GitHub Pages (for demo) |
+🧩 Tech Stack
+Technology	Purpose
+React.js	Frontend Framework
+React-Leaflet	Map rendering and marker animation
+OpenStreetMap	Map tiles
+CSS3	Styling + animation
+JS Haversine Formula	ETA calculation (based on distance)
+Mock Data	Kirana inventory & user order simulation
 
----
+📦 Folder Structure
+css
+Copy
+Edit
+📦src
+ ┣ 📂components
+ ┃ ┣ 📜DarkStoreSummary.jsx
+ ┃ ┣ 📜FallbackItemMatcher.jsx
+ ┃ ┣ 📜MapRouteSimulator.jsx
+ ┃ ┣ 📜OrderSummary.jsx
+ ┃ ┣ 📜FinalOrderSummary.jsx
+ ┣ 📜App.jsx
+ ┣ 📜index.js
+🧪 Future Enhancements
+🔐 Add backend + auth for store logins
 
-## 🗂 Project Structure
-returnmate/
-├── client/ # React frontend
-│ └── src/
-│ ├── pages/
-│ │ ├── Customer/ # ReturnForm.jsx, ReturnStatus.jsx
-│ │ └── Admin/ # GradingPanel.jsx, InventoryDashboard.jsx
-│ └── services/ # Axios API functions
-│
-├── server/ # Node.js backend
-│ ├── models/ # MongoDB Schemas
-│ ├── routes/ # API Routes
-│ ├── controllers/ # Business Logic
-│ └── utils/ # Trust score logic, image uploader
+📦 Make inventory dynamically changeable
 
-🧪 Demo Credentials (For Admin Testing)
-Add fake credentials for grading panel if needed.
+🔄 Real-time rider tracking using sockets
 
-📈 Roadmap
- Return form with file upload
+📱 Fully responsive mobile-first UI
 
- Trust score logic
+📍 Filter fallback kiranas by distance, not just pincode
 
- Admin product grading
+📊 Add analytics dashboard (distance saved, ETA accuracy)
 
- Email/OTP-based login (optional)
-
- Analytics panel
-
- Mobile responsiveness
-
-🙌 Contribution
-Feel free to fork, raise issues, or suggest features via pull requests.
+🤓 Learnings
+Geo-based logic & Haversine distance in JS
+Real-world order fallback planning
+Component-based UI architecture
+React + animation handling (marker movement)
+Designing for edge cases (out-of-stock fallback)
 
 📄 License
-MIT License
+MIT License – Free to use, fork, and remix with credit.
 
-👨‍💻 Built By
-Rajan Kumar Das & 
-contributors ✨
+✨ Credits
+Built with ❤️ by Rajan Kumar Das
+Design inspiration from real-world delivery systems like Minutes Zepto,and Instamart.
+
+📌 Star This Repo!
+If you liked the project, consider giving it a ⭐
+Helps others discover and motivates me to build more!
+
+
