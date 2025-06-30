@@ -1,0 +1,93 @@
+/* DarkStoreSummary.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.darkstore-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* FULL height of viewport */
+  background-color: rgb(7, 22, 34);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.darkstore-card {
+  background-color: white;
+  padding: 30px;
+  max-width: 520px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-out;
+  font-family: 'Segoe UI', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.darkstore-card:hover {
+  transform: scale(1.01);
+}
+
+/* ... keep the rest as it is */
+
+
+.block {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.available-block {
+  background-color: #eafaf1;
+}
+
+.missing-block {
+  background-color: #fdecea;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.subtle {
+  color: #666;
+  font-style: italic;
+}
+
+.complete-msg {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.action-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #e67e22;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #cf711f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

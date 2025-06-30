@@ -1,0 +1,84 @@
+/* OrderSummary.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.order-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f5f7fa;
+  padding: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+  transform: scale(1.01);
+}
+
+.store-block {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.store-block:hover {
+  background-color: #f0f0f0;
+}
+
+.summary-box {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background-color: #219150;
+}
+
+.no-match {
+  color: #c0392b;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
